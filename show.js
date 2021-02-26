@@ -86,18 +86,4 @@ function show4(){
 }
 
 
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username : "zahmidi",
-        Password : "andelZ1997",
-        SecureToken: "Generate token here",
-        From : "abderahmanzahmidi@gmail.com",
-        To : 'abderahman.zahmidi.solicode@gmail.com',
-        Subject: "Mail Subject here",
-        Body: "Mail Body Here"
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
-}
+

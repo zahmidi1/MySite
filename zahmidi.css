@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Akaya Kanadaka', cursive;
+    
 }
 .bag{
     width: 100%;
@@ -41,10 +43,10 @@
 }
 h2{
    
-    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0,0,0.1));
+    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0,1,0));
 }
 h1{
-    -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(0,0,0.1));
+    -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(0,1,0));
 }
 .sidebar{
     width: 50px;
@@ -94,7 +96,7 @@ li :hover{
     text-decoration: none;
     color: #fff;
     transition: 2s;
-    font-family: candal;
+    
     line-height: 58px;
 }
 .menu-button li{
@@ -108,6 +110,8 @@ li :hover{
     transform: 50% 0;
     transform: perspective(350px) rotateX(-90deg) ;
     line-height: 58px;
+    z-index: 10;
+   
 }
 
 .menu-button:hover li{
@@ -130,6 +134,7 @@ li :hover{
     border: none;
     background: none;
     color: #fff;
+    outline: none;
 }
 
 
@@ -277,6 +282,9 @@ cursor: pointer;
     bottom: 600px;
     width: 200px;
     height: 300px;
+    position: fixed;
+    left: 20px;
+    bottom: 200px;
 }
 .projet img:nth-child(2){
     animation-delay: 15s;
@@ -410,6 +418,10 @@ input, textarea{
     margin-right: 20%;
     width: 60%;
     height: 30px;
+    outline: none;
+}
+input{
+    outline: none;
 }
 
 .env{
@@ -466,7 +478,7 @@ h3, p{
             width: 60px;
         }
 
-    skils img:nth-child(1){
+    .skils img:nth-child(1){
         animation-delay: 0;
         animation: none;
         position: relative;
@@ -511,15 +523,17 @@ h3, p{
         left: 8%;
         transform: translateY(-50%);
         z-index: 2;
-        font-size: 25px ;
+        font-size: 30px ;
         
         text-transform: uppercase;
     }
     h2{
+        font-size: 50px;
    
         -webkit-box-reflect: below -17px linear-gradient(transparent, rgba(0,0,0.1));
     }
     h1{
+        font-size: 50px;
         -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0,0,0.1));
     }
     .menu-button{
@@ -583,7 +597,7 @@ h3, p{
 }
 @media (max-width : 500px){
     h3, p{
-        font-size: 10px;
+        font-size: 30px;
     }
     .about{
        width: 80%;
@@ -600,15 +614,17 @@ h3, p{
         left: 8%;
         transform: translateY(-50%);
         z-index: 2;
-        font-size: 20px ;
+        font-size: 30px ;
         margin: 10px 0 10px;
         text-transform: uppercase;
     }
     h2{
    
         -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0,0,0.1));
+        font-size: 30px;
     }
     h1{
+        font-size: 40px;
         -webkit-box-reflect: below -13px linear-gradient(transparent, rgba(0,0,0.1));
     }
 
@@ -655,7 +671,7 @@ h3, p{
 .projet img:nth-child(1){
     animation-delay: 20s;
   
-    width: 200px;
+    width: 150px;
     height: 200px;
 }
 .projet img:nth-child(2){
